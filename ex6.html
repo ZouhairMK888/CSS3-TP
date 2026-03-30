@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercice 6</title>
+<style>
+:root {
+  --bg: white;
+  --text: black;
+}
+
+.dark {
+  --bg: black;
+  --text: white;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+</style>
+</head>
+<body>
+
+<h1>Variables CSS</h1>
+<button onclick="document.body.classList.toggle('dark')">
+Toggle Theme
+</button>
+
+</body>
+</html>
