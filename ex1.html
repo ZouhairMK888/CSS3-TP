@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercice 1</title>
+<style>
+.main-nav a { color: blue; }
+.main-nav a.active { color: red; }
+.post.featured { background: #f0f0f0; }
+article p:first-of-type { font-weight: bold; }
+li:nth-child(even) { background: #ddd; }
+</style>
+</head>
+<body>
+
+<h1>Exercice 1 - Réponses</h1>
+
+<h2>1. Sélecteurs :</h2>
+<ul>
+<li>Tous les liens → <b>.main-nav a</b></li>
+<li>Lien actif → <b>.main-nav a.active</b></li>
+<li>Article featured → <b>.post.featured</b></li>
+<li>Premier paragraphe → <b>article p:first-of-type</b></li>
+<li>li pairs → <b>li:nth-child(even)</b></li>
+</ul>
+
+<h2>2. Spécificité :</h2>
+<p>Ordre croissant :</p>
+<p><b>p → .text → p.text → #main → #main .text p</b></p>
+
+<p>Si même spécificité → <b>la dernière règle gagne</b></p>
+<p>Éviter !important → <b>rend le code difficile à maintenir</b></p>
+
+</body>
+</html>
