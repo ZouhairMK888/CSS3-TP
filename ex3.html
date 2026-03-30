@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercice 3</title>
+<style>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card-link {
+  margin-top: auto;
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Exercice 3 - Flexbox</h1>
+
+<nav class="navbar">
+  <div>MonSite</div>
+  <ul class="nav-links">
+    <li>Accueil</li>
+    <li>Services</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<div class="cards">
+  <div class="card">
+    <h3>Carte 1</h3>
+    <p>Petit texte</p>
+    <a class="card-link">Lien</a>
+  </div>
+
+  <div class="card">
+    <h3>Carte 2</h3>
+    <p>Contenu plus long pour tester</p>
+    <a class="card-link">Lien</a>
+  </div>
+
+  <div class="card">
+    <h3>Carte 3</h3>
+    <p>Texte moyen</p>
+    <a class="card-link">Lien</a>
+  </div>
+</div>
+
+</body>
+</html>
