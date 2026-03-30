@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercice 5 - Responsive</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Mobile First */
+.container {
+  padding: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: lightblue;
+  padding: 10px;
+}
+
+.content {
+  background: lightgray;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.sidebar {
+  display: none;
+  background: orange;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .content {
+    background: lightgreen;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .layout {
+    display: flex;
+    gap: 10px;
+  }
+
+  .content {
+    flex: 3;
+  }
+
+  .sidebar {
+    display: block;
+    flex: 1;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align:center;">Exercice 5 - Responsive</h1>
+
+<div class="container">
+
+  <div class="nav-menu">
+    <div>Accueil</div>
+    <div>Services</div>
+    <div>Contact</div>
+  </div>
+
+  <div class="layout">
+    <div class="content">
+      <p>Contenu principal</p>
+      <p>Resize the screen 👇</p>
+    </div>
+
+    <div class="sidebar">
+      Sidebar (visible only on desktop)
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
