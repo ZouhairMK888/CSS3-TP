@@ -22,4 +22,3 @@ These files are meant for learning and practicing:
 - basic HTML structure
 - CSS styling
 - responsive design with media queries
-https://claude.ai/share/75058e58-919f-4ddf-9bf6-ca2c79015104
